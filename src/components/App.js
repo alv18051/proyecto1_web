@@ -117,18 +117,18 @@ function App(){
                 <h2>Excellent acoustic adjustment technology makes sound full of texture.</h2>
             </div>
             <div className='grid-productos'>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
+            <Tarjeta titulo = 'KZ EDA' img = 'https://kz-audio.com/images/main-card-eda.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ x HBB DQ6S' img = 'https://kz-audio.com/images/main-card-hbb-dq6s.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ EDS' img = 'https://kz-audio.com/images/main-card-eds.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ EDC' img = 'https://kz-audio.com/images/main-card-edc.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ EDX Pro' img = 'https://kz-audio.com/images/main-card-edx-pro.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ EDX' img = 'https://kz-audio.com/images/main-card-edx.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ DQ6' img = 'https://kz-audio.com/images/main-card-dq6.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ ZS3E' img = 'https://kz-audio.com/images/main-card-zs3e.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ ZS3' img = 'https://kz-audio.com/images/main-card-zs3.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ ED' img = 'https://kz-audio.com/images/main-card-ed.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ ED4' img = 'https://kz-audio.com/images/main-card-ed4.jpg' descripcion = 'Dynamic unit earphnes'/>
+            <Tarjeta titulo = 'KZ ED9' img = 'https://kz-audio.com/images/main-card-ed9.jpg' descripcion = 'Dynamic unit earphnes'/>
 
 
             </div>
@@ -138,11 +138,11 @@ function App(){
                 <h2>Improve your earphones with a new one upgrade cable or turn it into a Bluetooth headset</h2>
             </div>
             <div className='grid-productos'>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
-            <Tarjeta titulo = '' img = '' descripcion = ''/>
+            <Tarjeta titulo = 'KZ AZ10' img = 'https://kz-audio.com/images/main-card-az10.jpg' descripcion = 'Upgrade cable adding Bluetooth'/>
+            <Tarjeta titulo = 'KZ AZ09 Pro' img = 'https://kz-audio.com/images/main-card-az09-pro.jpg' descripcion = 'Upgrade cable adding Bluetooth'/>
+            <Tarjeta titulo = 'KZ AZ09' img = 'https://kz-audio.com/images/main-card-az09.jpg' descripcion = 'Upgrade cable adding Bluetooth'/>
+            <Tarjeta titulo = 'KZ Bluetooth 5.0' img = 'https://kz-audio.com/images/main-card-s1-cable-bt50.jpg' descripcion = 'Upgrade cable adding Bluetooth'/>
+            <Tarjeta titulo = 'KZ Bluetooth 4.2' img = 'https://kz-audio.com/images/main-card-s1-cable-bt42.jpg' descripcion = 'Upgrade cable adding Bluetooth'/>
 
 
             </div>
