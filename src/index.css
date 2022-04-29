@@ -1,0 +1,9 @@
+
+body{
+    background-image: url('https://i.imgur.com/PJlwc0G.jpg');
+    margin: 0;
+    font-size: larger;
+    text-align: center;
+    background: hsl(0, 0%, 100%);
+    color: beige;
+}
