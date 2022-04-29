@@ -14,6 +14,7 @@ Las tecnologias utilizadas son:
 - ESlint
 - Sass
 
-**Como correr el programa**
+**Como correr el programa**:
+
 Para correr este proyecto existen dos maneras, la primera es instalar las dependecias necesarias con el comando "npm install" (debe de tener node.js instalado) dentro de su editor de codigo de preferencia, y luego correr el comando "npm start" o se puede correr directamente el archivo "index.html" que va a estar ubicado en la carpeta dist.
 
