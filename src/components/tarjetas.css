@@ -5,6 +5,19 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    border-width: 0.5px;
+    border-width: 2px;
     border-color: #19795f;
+}
+
+.imgSA{
+    justify-content: center;
+    position: relative;
+    max-width: 60%;
+    width: 60%;
+    height: 60%;
+    height: auto;
+}
+
+.Boton{
+    background-color: #19795f;
 }
