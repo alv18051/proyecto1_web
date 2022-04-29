@@ -1,69 +1,61 @@
-import './Carrusel.css'
-import React, {useState} from 'react';
-import boton from './boton';
-import dataCarrusel from './dataCarrusel';
+import './Carrusel.css';
+import React, {useState, useEffect} from 'react';
 
+export default function Carrusel({img}){
 
-export default function Carrusel(){
+  const Thumbnail = ({ arr, image, index }) => {
+    return (<div className="tumbnail">
+      {
+        arr.map((imgsrc, i) => (
+          <img
+            key={i}
+            height="50"
+            src={imgsrc}
+            onClick={() => image(i)}
+            className={index === i ? 'active' : ''}
+          />
+        ))
+      }
+    </div>);
+  };
 
-    const [carruselSlide, setcarruselSlide] = useState(1)
+  const [index, setIndex] = useState(0);
 
-    const siguienteFoto = () =>{
-        if(carruselSlide !== dataCarrusel.length){
-            setcarruselSlide(carruselSlide + 1)
+  const sig = () =>{
+    if(index === img.lenght - 1 ){
+      setIndex(0);
 
-        }else{
-            setcarruselSlide(1)
-        }
+    }else{
+      setIndex(index+1);
     }
+  };
 
-    const anteriorFoto = () =>{
-        if(carruselSlide !== 1){
-            setcarruselSlide(carruselSlide -1)
-
-        }else{
-            setcarruselSlide(dataCarrusel.length)
-        }
+  const ant = () =>{
+    if(index === 0){
+      setIndex(img.lenght -1);
+    }else{
+      setIndex(index - 1);
     }
-
-    const movePunto = index => {
-        setcarruselSlide(index)
-    }
+  };
 
 
-    return (
-    <>
-    <div className='container-carrusel'>
-        {dataCarrusel.map((obj, index)=>{
+  useEffect(() => {
+    setIndex(0);
+  }, []);
 
-            return (
-                <div key = {obj.id} 
-                    className={carruselSlide === index + 1 ? "slide active-anim": "slide"} > 
-                    <img
-                    src={process.env.PUBLIC_URL +`/Img/img${index + 1}.jpg`}
-                    />
-                </div>                
-            )
-        }
-        
-        )}
-
-        <boton moverCarrusel={siguienteFoto} direccion = {"next"}/>
-        <boton moverCarrusel={anteriorFoto} direccion = {"previouse"}/>
-        
-        <div className='container-puntos'>
-            {Array.from({length: 5}).map((item, index)=>(
-                <div 
-                onClick = {() => movePunto(index + 1 )}
-                className = {carruselSlide === index + 1 ? "punto-active": "punto"}>
-                </div>
-            ))}
+  return(
+    
+    <div className="slideshow">
+      <img className="mainImg" src={img[index]} />
+      <div className="actions">
+        <button onClick={sig}></button>
+        <button onClick={ant}></button>
+      </div>
+      <Thumbnail arr={img} image={setIndex} index={index} />
+    </div>
 
 
-        </div>
-        </div>    
-    </>
-)}
+  );}
 
 
 

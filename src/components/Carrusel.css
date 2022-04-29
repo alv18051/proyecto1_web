@@ -1,74 +1,51 @@
-.container-carrusel {
-    max-width: 700px;
-    height: 500px;
-    margin: 100px auto 0;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  @media screen and (max-width: 700px){
-    .container-carrusel {
-      margin: 100px 10px 0;
-    }
-  }
-  .cambiar {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    transition: opacity ease-in-out 0.4s;
-  }
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .active-anim {
-    opacity: 1;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .cambiar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #f1f1f1;
-    border: 1px solid rgba(34, 34, 34, 0.287);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
- 
-  .previa {
-    top: 50%;
-    left: 20px;
-    transform: translateY(-60%);
-  }
-  .siguiente {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-60%);
-  }
-  
-  .container-puntos {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
-  .punto {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid #f1f1f1;
-    opacity: 75%;
-    margin: 0 5px;
-    background: #f1f1f1;
-  }
-  .punto-active {
-    background: rgb(32, 32, 32);
-    opacity: 95%;
-  }
+body {
+  margin: 0;
+}
+
+.active {
+  border: 2px solid #1db9b9;
+  transform: scale(1.3);
+  transition: all 300ms;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.mainImg {
+  transition: all 500ms;
+}
+
+.actions {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  background: #0000003d;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  padding-top: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  padding-top: 5px;
+}
+
+.actions button:active {
+  background: #000000a2;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  padding-top: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  padding-top: 5px;
+}
